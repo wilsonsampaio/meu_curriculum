@@ -79,15 +79,15 @@ export default function AuthModal({ isOpen, onClose, currentUser, onLoginSuccess
     }
   };
 
-  const handleQuickDemoWilson = () => {
-    setEmail("wilsonluissampaio@gmail.com");
+  const handleQuickDemo = () => {
+    setEmail("alexandre.silva@exemplo.com");
     setPassword("123");
     setTimeout(() => {
       // Auto submit
       fetch("/api/auth/login", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ email: "wilsonluissampaio@gmail.com", password: "123" }),
+        body: JSON.stringify({ email: "alexandre.silva@exemplo.com", password: "123" }),
       })
         .then((r) => r.json())
         .then((data) => {
@@ -168,7 +168,7 @@ export default function AuthModal({ isOpen, onClose, currentUser, onLoginSuccess
                     required
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
-                    placeholder="ex: wilsonluissampaio@gmail.com"
+                    placeholder="ex: seu.email@exemplo.com"
                     className="w-full pl-9 pr-3 py-2 text-sm border border-slate-300 rounded-xl focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 outline-none"
                   />
                 </div>
@@ -202,11 +202,11 @@ export default function AuthModal({ isOpen, onClose, currentUser, onLoginSuccess
               <div className="pt-3 border-t border-slate-100">
                 <button
                   type="button"
-                  onClick={handleQuickDemoWilson}
+                  onClick={handleQuickDemo}
                   className="w-full py-2 px-3 bg-slate-100 hover:bg-slate-200 text-slate-700 rounded-xl text-xs font-medium transition flex items-center justify-center gap-2 border border-slate-200"
                 >
                   <Sparkles className="w-3.5 h-3.5 text-indigo-600" />
-                  Entrar como Wilson Sampaio (Demonstração)
+                  Entrar com Perfil de Demonstração (Alexandre Silva)
                 </button>
               </div>
             </form>

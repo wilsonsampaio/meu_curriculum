@@ -36,7 +36,7 @@
 - **Sem poluição de navegador**: Oculta automaticamente links de URL (`https://...`), títulos do sistema e carimbos de data do navegador.
 - Preservação total de gráficos, destaques visuais e quebras de página controladas (`page-break-inside: avoid`).
 
-### 5. 🤖 WilsonIA - Copiloto de Carreira & Simulador de Entrevistas
+### 5. 🤖 CurriculoIA - Copiloto de Carreira & Simulador de Entrevistas
 - Assistente conversacional integrado especializado no mercado de tecnologia, redes e desenvolvimento de software.
 - Simulação de perguntas técnicas de entrevistas de emprego.
 - Sugestões de certificações e palavras-chave alinhadas a vagas abertas.
@@ -47,13 +47,13 @@
 
 ```
 ==================================================================================================
- [Top Header]  Gerador de Currículo Wilson Sampaio  | ATS & IA Resume Engine
- [Ações]       [⚡ Importar PDF/Word] [🛡️ Score ATS: 96% A+] [📁 Meus Currículos (3)] [👤 Wilson Sampaio] [💾 Salvar] [Exportar PDF]
+ [Top Header]  Gerador de Currículo Profissional ATS & IA Resume Engine
+ [Ações]       [⚡ Importar PDF/Word] [🛡️ Score ATS: 96% A+] [📁 Meus Currículos (3)] [👤 Alexandre Silva] [💾 Salvar] [Exportar PDF]
 ==================================================================================================
  -------------------------------------------------------- ----------------------------------------
  | PAINEL ESQUERDO: EDITOR & COPILOTO IA                | | PAINEL DIREITO: VISUALIZAÇÃO A4      |
- | [ Editar Informações ]  [ 🤖 WilsonIA Copiloto ]     | |                                      |
- |                                                      | |  WILSON SAMPAIO                      |
+ | [ Editar Informações ]  [ 🤖 CurriculoIA Copiloto ]  | |                                      |
+ |                                                      | |  ALEXANDRE SILVA                     |
  |  [✓] Dados Pessoais & Contatos                       | |  Especialista em Redes / Dev Back-End|
  |  [✓] Resumo Executivo (com gerador de IA)            | |                                      |
  |  [✓] Experiências Profissionais (Método STAR)        | |  RESUMO PROFISSIONAL                 |

@@ -1,6 +1,6 @@
 {
   "name": "Gerador de Currículo Wilson Sampaio",
-  "description": "Um gerador de currículo profissional e assistente de carreira com IA integrado para Wilson Sampaio, com exportação PDF e suporte a múltiplos templates.",
+  "description": "Um gerador de currículo profissional e assistente de carreira com IA integrado, com exportação PDF, otimização para motores ATS (Gupy) e suporte a múltiplos templates e perfis.",
   "requestFramePermissions": [],
   "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
 }

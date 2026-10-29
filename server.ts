@@ -60,18 +60,18 @@ interface AppStorage {
   resumes: StoredResume[];
 }
 
-const defaultWilsonResumeData = {
-  name: "Wilson Sampaio",
+const defaultResumeData = {
+  name: "Alexandre Silva",
   title: "Especialista em Redes / Desenvolvedor Back-End / FTTH",
-  email: "wilsonluissampaio@gmail.com",
-  phone: "+55 88 99209-9510",
-  location: "Ceará, Brasil",
-  linkedin: "https://www.linkedin.com/in/wilson-sampaio-7a48396b/",
-  instagram: "@devbrasil2022",
-  github: "",
+  email: "alexandre.silva@exemplo.com",
+  phone: "+55 (11) 98765-4321",
+  location: "São Paulo, SP - Brasil",
+  linkedin: "https://www.linkedin.com/in/perfil-profissional/",
+  instagram: "",
+  github: "https://github.com/perfil-dev",
   website: "",
   avatarUrl: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=256&h=256",
-  summary: "Profissional sênior e polivalente com sólida atuação em infraestrutura de redes de alta disponibilidade, especialista em tecnologias FTTH e MikroTik. Atualmente cursando Análise e Desenvolvimento de Sistemas com foco em programação Back-End (Python) e inteligência artificial aplicados à automação de processos, análise de dados e garantia de qualidade (QA). Ampla experiência prática em campo e suporte especializado para operadoras de internet e empresas de tecnologia renomadas como TecBan, Networks Internet e TIVIT.",
+  summary: "Profissional sênior e polivalente com sólida atuação em infraestrutura de redes de alta disponibilidade, especialista em tecnologias FTTH e MikroTik. Com formação em Análise e Desenvolvimento de Sistemas com foco em programação Back-End (Python) e inteligência artificial aplicados à automação de processos, análise de dados e garantia de qualidade (QA). Ampla experiência técnica em campo e suporte especializado para infraestruturas corporativas e operadoras de tecnologia.",
   languages: [
     { id: "lang-1", name: "Português", level: "Nativo" },
     { id: "lang-2", name: "Inglês", level: "Intermediário" }
@@ -174,13 +174,13 @@ function initStorage(): AppStorage {
     console.error("Erro ao ler storage, inicializando dados padrão:", err);
   }
 
-  // Pre-seed default user (Wilson Sampaio)
+  // Pre-seed default user (Exemplo Inicial)
   const initialData: AppStorage = {
     users: [
       {
-        id: "user-wilson",
-        name: "Wilson Sampaio",
-        email: "wilsonluissampaio@gmail.com",
+        id: "user-demo",
+        name: "Alexandre Silva",
+        email: "alexandre.silva@exemplo.com",
         password: "123",
         headline: "Especialista em Redes / Dev Back-End / FTTH",
         avatarUrl: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=256&h=256",
@@ -189,12 +189,12 @@ function initStorage(): AppStorage {
     ],
     resumes: [
       {
-        id: "resume-wilson-primary",
-        userId: "user-wilson",
+        id: "resume-demo-primary",
+        userId: "user-demo",
         title: "Currículo Principal (Otimizado Gupy/ATS)",
         template: "gupy",
         targetRole: "Especialista em Redes & Dev Back-End",
-        data: defaultWilsonResumeData,
+        data: defaultResumeData,
         createdAt: new Date().toISOString(),
         updatedAt: new Date().toISOString(),
         atsScore: 96,
@@ -284,7 +284,7 @@ app.post("/api/auth/register", (req, res) => {
     template: "gupy",
     targetRole: targetRole || "Geral",
     data: {
-      ...defaultWilsonResumeData,
+      ...defaultResumeData,
       name: newUser.name,
       email: newUser.email,
       title: newUser.headline || "Profissional de Tecnologia",
@@ -787,7 +787,7 @@ app.post("/api/resume/chat-advice", async (req, res) => {
   if (!ai) return res.status(503).json({ error: "O serviço de Inteligência Artificial não está configurado." });
   const { messages, resumeData } = req.body;
   try {
-    const systemInstruction = `Você é o "WilsonIA", um assistente inteligente especialista em carreiras de TI e otimização de currículos para a área de infraestrutura, redes, eletrônica e desenvolvimento de software.
+    const systemInstruction = `Você é o "CurriculoIA", um assistente inteligente especialista em carreiras de tecnologia e otimização de currículos para ATS e recrutamento técnico.
 Você tem acesso ao currículo atual do usuário para poder dar conselhos personalizados, especialmente focados na otimização para sistemas de inteligência artificial de recrutamento, como a Gupy, Kenoby e Sólides (ATS).
 
 Diretrizes importantes:

@@ -1,17 +1,17 @@
 import { ResumeData } from "./types.ts";
 
 export const initialResumeData: ResumeData = {
-  name: "Wilson Sampaio",
+  name: "Alexandre Silva",
   title: "Especialista em Redes / Desenvolvedor Back-End / FTTH",
-  email: "wilsonluissampaio@gmail.com",
-  phone: "+55 88 99209-9510",
-  location: "Ceará, Brasil",
-  linkedin: "https://www.linkedin.com/in/wilson-sampaio-7a48396b/",
-  instagram: "@devbrasil2022",
-  github: "",
+  email: "alexandre.silva@exemplo.com",
+  phone: "+55 (11) 98765-4321",
+  location: "São Paulo, SP - Brasil",
+  linkedin: "https://www.linkedin.com/in/perfil-profissional/",
+  instagram: "",
+  github: "https://github.com/perfil-dev",
   website: "",
   avatarUrl: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=256&h=256",
-  summary: "Profissional sênior e polivalente com sólida atuação em infraestrutura de redes de alta disponibilidade, especialista em tecnologias FTTH e MikroTik. Atualmente cursando Análise e Desenvolvimento de Sistemas com foco em programação Back-End (Python) e inteligência artificial aplicados à automação de processos, análise de dados e garantia de qualidade (QA). Ampla experiência prática em campo e suporte especializado para operadoras de internet e empresas de tecnologia renomadas como TecBan, Networks Internet e TIVIT.",
+  summary: "Profissional sênior e polivalente com sólida atuação em infraestrutura de redes de alta disponibilidade, especialista em tecnologias FTTH e MikroTik. Com formação em Análise e Desenvolvimento de Sistemas com foco em programação Back-End (Python) e inteligência artificial aplicados à automação de processos, análise de dados e garantia de qualidade (QA). Ampla experiência técnica em campo e suporte especializado para infraestruturas corporativas e operadoras de tecnologia.",
   languages: [
     { id: "lang-1", name: "Português", level: "Nativo" },
     { id: "lang-2", name: "Inglês", level: "Intermediário" }

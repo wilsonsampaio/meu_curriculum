@@ -24,9 +24,9 @@ export default function App() {
       if (cached) return JSON.parse(cached);
     } catch (e) {}
     return {
-      id: "user-wilson",
-      name: "Wilson Sampaio",
-      email: "wilsonluissampaio@gmail.com",
+      id: "user-demo",
+      name: "Alexandre Silva",
+      email: "alexandre.silva@exemplo.com",
       headline: "Especialista em Redes / Dev Back-End / FTTH",
       avatarUrl: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=256&h=256",
       createdAt: new Date().toISOString(),
@@ -41,8 +41,8 @@ export default function App() {
     } catch (e) {}
     return [
       {
-        id: "resume-wilson-primary",
-        userId: "user-wilson",
+        id: "resume-demo-primary",
+        userId: "user-demo",
         title: "Currículo Principal (Otimizado Gupy/ATS)",
         template: "gupy",
         targetRole: "Especialista em Redes & Dev Back-End",
@@ -54,7 +54,7 @@ export default function App() {
     ];
   });
 
-  const [activeResumeId, setActiveResumeId] = useState<string>("resume-wilson-primary");
+  const [activeResumeId, setActiveResumeId] = useState<string>("resume-demo-primary");
   const [resumeData, setResumeData] = useState<ResumeData>(initialResumeData);
   const [template, setTemplate] = useState<ResumeTemplate>("gupy");
   const [activeTab, setActiveTab] = useState<"edit" | "ai-coach">("edit");
@@ -83,7 +83,7 @@ export default function App() {
   const [chatMessages, setChatMessages] = useState<Array<{ role: "user" | "assistant"; content: string }>>([
     { 
       role: "assistant", 
-      content: "Olá Wilson! Sou o **WilsonIA**, seu assistente de carreira e recrutador de TI virtual. Analisei seu currículo e vi que você tem excelentes competências em Redes, MikroTik, FTTH e está se capacitando em Python, Inteligência Artificial e QA. Como posso ajudar você hoje? Posso simular uma entrevista técnica, sugerir melhorias ou ajudar na busca por vagas!" 
+      content: "Olá! Sou o **CurriculoIA**, seu assistente de carreira e recrutador virtual de TI. Analisei seu currículo e vi competências sólidas para o mercado de tecnologia. Posso ajudar você a otimizar cada seção para aprovação em inteligências artificiais (Gupy, Kenoby), simular perguntas técnicas de entrevistas de emprego ou sugerir novas competências estratégicas. Como posso ajudar você hoje?" 
     }
   ]);
   const [userQuery, setUserQuery] = useState("");
@@ -182,7 +182,7 @@ export default function App() {
         body: JSON.stringify({
           text,
           type: fieldType,
-          context: "Wilson Sampaio - Especialista em Redes e Desenvolvedor Back-end Python",
+          context: `${resumeData.name} - ${resumeData.title || "Profissional de Tecnologia"}`,
         }),
       });
 
@@ -745,7 +745,7 @@ export default function App() {
                   : "border-transparent text-slate-500 hover:text-slate-800"
               }`}
             >
-              <Bot className="w-4 h-4 text-purple-600" /> WilsonIA Copiloto
+              <Bot className="w-4 h-4 text-purple-600" /> CurriculoIA Copiloto
               <span className="bg-purple-100 text-purple-700 text-[10px] px-1.5 py-0.5 rounded-full font-semibold">Novo</span>
             </button>
           </div>
@@ -1175,7 +1175,7 @@ export default function App() {
               <div className="bg-purple-50 p-4 border-b border-purple-100 flex items-center gap-3 shrink-0">
                 <Bot className="w-8 h-8 text-purple-600 shrink-0" />
                 <div className="text-xs">
-                  <p className="font-bold text-purple-950">WilsonIA - Consultoria de TI & Entrevistas</p>
+                  <p className="font-bold text-purple-950">CurriculoIA - Consultoria de TI & Entrevistas</p>
                   <p className="text-purple-700/80">Faça simulações de perguntas técnicas, peça dicas de capacitação ou ideias de vagas remotas.</p>
                 </div>
               </div>
@@ -1196,7 +1196,11 @@ export default function App() {
                           : "bg-purple-100 text-purple-800"
                       }`}
                     >
-                      {msg.role === "user" ? "WS" : <Bot className="w-4 h-4" />}
+                      {msg.role === "user" ? (
+                        currentUser.name ? currentUser.name.split(" ").filter(Boolean).map(n => n[0]).slice(0, 2).join("").toUpperCase() : "EU"
+                      ) : (
+                        <Bot className="w-4 h-4" />
+                      )}
                     </div>
                     <div
                       className={`p-3.5 rounded-2xl text-xs leading-relaxed whitespace-pre-line shadow-sm border ${
@@ -1216,7 +1220,7 @@ export default function App() {
                       <RefreshCw className="w-4 h-4 animate-spin text-purple-600" />
                     </div>
                     <div className="bg-slate-100 p-3 rounded-2xl text-xs text-slate-500 italic">
-                      WilsonIA está digitando uma resposta especializada...
+                      CurriculoIA está digitando uma resposta especializada...
                     </div>
                   </div>
                 )}
