@@ -519,6 +519,34 @@ export default function App() {
     }
   };
 
+  // Quick action: Download JSON backup directly to local machine
+  const handleDownloadJsonBackup = () => {
+    const filename = `Curriculo_${(resumeData.name || currentUser.name || "Curriculo").replace(/[^a-zA-Z0-9_-]/g, "_")}.json`;
+    const dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify({
+      version: "2.0",
+      user: {
+        id: currentUser.id,
+        name: currentUser.name,
+        email: currentUser.email
+      },
+      resume: {
+        id: activeResumeId,
+        title: currentResumeTitle,
+        template,
+        atsScore,
+        data: resumeData,
+        atsReport,
+        exportedAt: new Date().toISOString()
+      }
+    }, null, 2));
+    const downloadAnchor = document.createElement("a");
+    downloadAnchor.setAttribute("href", dataStr);
+    downloadAnchor.setAttribute("download", filename);
+    document.body.appendChild(downloadAnchor);
+    downloadAnchor.click();
+    downloadAnchor.remove();
+  };
+
   const currentResumeTitle = savedResumes.find(r => r.id === activeResumeId)?.title || "Currículo Ativo";
 
   return (
@@ -1306,25 +1334,35 @@ export default function App() {
                 </ol>
               </div>
 
-              <div className="pt-2 flex flex-col sm:flex-row gap-2 justify-end">
+              <div className="pt-2 flex flex-col sm:flex-row gap-2 justify-between items-center">
                 <button
-                  onClick={() => setShowPrintModal(false)}
-                  className="px-4 py-2.5 rounded-lg border border-slate-200 hover:bg-slate-100 text-slate-500 hover:text-slate-700 font-semibold transition text-center cursor-pointer"
+                  onClick={handleDownloadJsonBackup}
+                  className="w-full sm:w-auto px-4 py-2.5 rounded-lg border border-indigo-200 bg-indigo-50 hover:bg-indigo-100 text-indigo-700 font-semibold transition flex items-center justify-center gap-2 cursor-pointer text-xs"
+                  title="Baixar arquivo de dados e backup do currículo para sua máquina local"
                 >
-                  Fechar guia
+                  <Download className="w-4 h-4" /> Baixar Backup (.JSON)
                 </button>
-                <button
-                  onClick={() => {
-                    try {
-                      window.print();
-                    } catch (e) {
-                      console.error(e);
-                    }
-                  }}
-                  className="px-4 py-2.5 bg-emerald-600 hover:bg-emerald-500 text-white font-semibold rounded-lg flex items-center justify-center gap-2 transition shadow cursor-pointer"
-                >
-                  <Printer className="w-4 h-4" /> Imprimir / Salvar PDF
-                </button>
+
+                <div className="flex gap-2 w-full sm:w-auto justify-end">
+                  <button
+                    onClick={() => setShowPrintModal(false)}
+                    className="px-4 py-2.5 rounded-lg border border-slate-200 hover:bg-slate-100 text-slate-500 hover:text-slate-700 font-semibold transition text-center cursor-pointer text-xs"
+                  >
+                    Fechar guia
+                  </button>
+                  <button
+                    onClick={() => {
+                      try {
+                        window.print();
+                      } catch (e) {
+                        console.error(e);
+                      }
+                    }}
+                    className="px-4 py-2.5 bg-emerald-600 hover:bg-emerald-500 text-white font-semibold rounded-lg flex items-center justify-center gap-2 transition shadow cursor-pointer text-xs"
+                  >
+                    <Printer className="w-4 h-4" /> Imprimir / Salvar PDF
+                  </button>
+                </div>
               </div>
             </div>
           </div>

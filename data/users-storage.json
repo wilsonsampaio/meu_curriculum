@@ -83,165 +83,127 @@
           {
             "id": "exp-2",
             "company": "Networks Internet",
-            "role": "Especialista em Redes FTTH & MikroTik",
+            "role": "Especialista em Redes & FTTH",
             "location": "Ceará, Brasil",
-            "startYear": "2020",
-            "endYear": "2023",
+            "startYear": "2013",
+            "endYear": "2024",
             "isCurrent": false,
-            "description": "Planejamento e manutenção de redes de fibra óptica FTTH, configuração de roteadores MikroTik, OLTs, switches gerenciáveis e atendimento de chamados N2 e N3 com foco em alta disponibilidade e SLA rigoroso."
+            "description": "Liderança de projetos de implantação de redes de fibra óptica (FTTH) ponto a ponto e multiponto. Configuração de roteadores MikroTik (MTCN), roteamento IPV6, servidores OSPF, otimização de enlaces, ativação de clientes corporativos e solução de gargalos de rede."
           },
           {
             "id": "exp-3",
             "company": "TIVIT",
-            "role": "Analista de Suporte de Campo",
+            "role": "Analista de Suporte de TI",
             "location": "Fortaleza, CE",
             "startYear": "2018",
             "endYear": "2020",
             "isCurrent": false,
-            "description": "Atendimento a incidentes de hardware e software corporativo, manutenção preventiva de servidores e redes estruturadas de clientes de grande porte nacional."
+            "description": "Atendimento e suporte técnico de Nível 2 e Nível 3 para grandes clientes corporativos. Configuração de sistemas operacionais, administração de redes de dados locais, monitoramento de servidores na nuvem e implantação de patches de segurança."
+          },
+          {
+            "id": "exp-4",
+            "company": "Teledata",
+            "role": "Técnico em Telecomunicações",
+            "location": "Fortaleza, CE",
+            "startYear": "2012",
+            "endYear": "2013",
+            "isCurrent": false,
+            "description": "Instalação, calibração e manutenção preventiva de equipamentos eletrônicos de telecomunicações. Diagnósticos de circuitos eletrônicos analógicos e digitais, reparo de placas de circuito e testes de qualidade de sinais RF."
           }
         ],
         "skills": [
           {
-            "id": "sk-1",
-            "name": "Redes de Computadores",
+            "id": "sk-7",
+            "name": "Técnico de TI",
             "level": 5,
-            "category": "Infraestrutura"
+            "category": "Hard Skills"
           },
           {
             "id": "sk-2",
-            "name": "MikroTik (RouterOS)",
-            "level": 5,
-            "category": "Infraestrutura"
+            "name": "Python",
+            "level": 4,
+            "category": "Programação"
+          },
+          {
+            "id": "sk-1",
+            "name": "Microsoft Office",
+            "level": 4,
+            "category": "Produtividade"
           },
           {
             "id": "sk-3",
-            "name": "Tecnologia FTTH / Fibra Óptica",
-            "level": 5,
-            "category": "Infraestrutura"
+            "name": "Inteligência Artificial (IA)",
+            "level": 3,
+            "category": "Novas Tecnologias"
           },
           {
             "id": "sk-4",
-            "name": "Python",
-            "level": 4,
-            "category": "Desenvolvimento"
+            "name": "PowerBI",
+            "level": 3,
+            "category": "Análise de Dados"
           },
           {
             "id": "sk-5",
-            "name": "Back-End Development",
-            "level": 4,
-            "category": "Desenvolvimento"
+            "name": "AWS (Amazon Web Services)",
+            "level": 3,
+            "category": "Cloud"
           },
           {
             "id": "sk-6",
-            "name": "Automação de Processos",
-            "level": 4,
-            "category": "Desenvolvimento"
-          },
-          {
-            "id": "sk-7",
-            "name": "Inteligência Artificial & Prompts",
-            "level": 4,
-            "category": "Tecnologia Emergente"
-          },
-          {
-            "id": "sk-8",
-            "name": "Garantia da Qualidade (QA)",
+            "name": "Analista de QA (Testes de Software)",
             "level": 3,
-            "category": "Metodologias"
-          },
-          {
-            "id": "sk-9",
-            "name": "Eletrônica & Eletrotécnica",
-            "level": 5,
-            "category": "Hardware"
-          },
-          {
-            "id": "sk-10",
-            "name": "Roteamento e Switches",
-            "level": 4,
-            "category": "Infraestrutura"
+            "category": "Qualidade"
           }
         ],
         "certifications": [
           {
             "id": "cert-1",
-            "name": "Certificação em Redes MikroTik",
-            "issuer": "MikroTik Training Center"
+            "name": "FTTH Especialista",
+            "issuer": "Intelbrás"
           },
           {
             "id": "cert-2",
-            "name": "Especialista em Fusão e Medição FTTH",
-            "issuer": "Instituto de Óptica & Telecom"
+            "name": "Mikrotik MTCN - Specialist",
+            "issuer": "CATTV"
           },
           {
             "id": "cert-3",
-            "name": "Python para Automação e Análise",
-            "issuer": "Alura / Coursera"
+            "name": "Redes, IPV6, Intranet & Roteamento OSPF",
+            "issuer": "Nic.br"
           },
           {
             "id": "cert-4",
-            "name": "Segurança de Redes e Firewalls",
-            "issuer": "Cisco Networking Academy"
+            "name": "Python Básico ao Avançado",
+            "issuer": "Udemy"
           }
         ],
         "achievements": [
           {
             "id": "ach-1",
-            "name": "Redução de 35% no tempo de parada de redes através de monitoramento proativo",
-            "issuer": "Networks Internet",
-            "year": "2022"
+            "name": "Ecossistema de Tecnologia",
+            "issuer": "Future Digital Week"
           },
           {
             "id": "ach-2",
-            "name": "Implementação de scripts em Python para automação de rotinas de backup",
-            "issuer": "TecBan",
-            "year": "2024"
+            "name": "Testes Automáticos de QA",
+            "issuer": "Udemy"
           },
           {
             "id": "ach-3",
-            "name": "Mais de 500 células FTTH ativadas com 100% de conformidade técnica",
-            "issuer": "Telecom Ceará",
-            "year": "2021"
+            "name": "Python - Programação Avançada",
+            "issuer": "Udemy"
+          },
+          {
+            "id": "ach-4",
+            "name": "Redes de Alta Disponibilidade",
+            "issuer": "Nic.br"
           }
         ]
       },
       "createdAt": "2026-10-29T12:07:34.237Z",
-      "updatedAt": "2026-10-29T12:07:34.237Z",
+      "updatedAt": "2026-10-29T12:16:20.637Z",
       "atsScore": 96,
-      "lastAtsReport": {
-        "score": 96,
-        "gupyGrade": "A+",
-        "summary": "Currículo estruturado de forma ideal para parsers de inteligência artificial da Gupy e Kenoby.",
-        "strengths": [
-          "Layout linear de coluna única sem quebras de parsing",
-          "Verbos de ação no pretérito com métricas quantitativas",
-          "Palavras-chave técnicas de alta relevância (MikroTik, FTTH, Python, QA)"
-        ],
-        "correctionsApplied": [
-          "Estrutura otimizada para algoritmos semânticos de IA",
-          "Padronização de datas e cargos canônicos"
-        ],
-        "recommendations": [
-          "Mantenha o template Gupy para candidaturas em portais automatizados",
-          "Adicione links do GitHub com projetos práticos de automação"
-        ],
-        "detectedKeywords": [
-          "MikroTik",
-          "FTTH",
-          "Python",
-          "Back-End",
-          "TecBan",
-          "Redes",
-          "SLA"
-        ],
-        "missingCriticalKeywords": [
-          "Docker",
-          "Linux Shell",
-          "CI/CD"
-        ],
-        "readabilityAssessment": "Altamente legível por sistemas automatizados de ATS e recrutadores humanos."
-      }
+      "lastAtsReport": null
     }
   ]
 }
