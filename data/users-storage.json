@@ -1,0 +1,247 @@
+{
+  "users": [
+    {
+      "id": "user-wilson",
+      "name": "Wilson Sampaio",
+      "email": "wilsonluissampaio@gmail.com",
+      "password": "123",
+      "headline": "Especialista em Redes / Dev Back-End / FTTH",
+      "avatarUrl": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=256&h=256",
+      "createdAt": "2026-10-29T12:07:34.237Z"
+    }
+  ],
+  "resumes": [
+    {
+      "id": "resume-wilson-primary",
+      "userId": "user-wilson",
+      "title": "Currículo Principal (Otimizado Gupy/ATS)",
+      "template": "gupy",
+      "targetRole": "Especialista em Redes & Dev Back-End",
+      "data": {
+        "name": "Wilson Sampaio",
+        "title": "Especialista em Redes / Desenvolvedor Back-End / FTTH",
+        "email": "wilsonluissampaio@gmail.com",
+        "phone": "+55 88 99209-9510",
+        "location": "Ceará, Brasil",
+        "linkedin": "https://www.linkedin.com/in/wilson-sampaio-7a48396b/",
+        "instagram": "@devbrasil2022",
+        "github": "",
+        "website": "",
+        "avatarUrl": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=256&h=256",
+        "summary": "Profissional sênior e polivalente com sólida atuação em infraestrutura de redes de alta disponibilidade, especialista em tecnologias FTTH e MikroTik. Atualmente cursando Análise e Desenvolvimento de Sistemas com foco em programação Back-End (Python) e inteligência artificial aplicados à automação de processos, análise de dados e garantia de qualidade (QA). Ampla experiência prática em campo e suporte especializado para operadoras de internet e empresas de tecnologia renomadas como TecBan, Networks Internet e TIVIT.",
+        "languages": [
+          {
+            "id": "lang-1",
+            "name": "Português",
+            "level": "Nativo"
+          },
+          {
+            "id": "lang-2",
+            "name": "Inglês",
+            "level": "Intermediário"
+          }
+        ],
+        "areasOfInterest": [
+          "Back end",
+          "Eletrônica",
+          "Inteligência Artificial",
+          "Networks"
+        ],
+        "education": [
+          {
+            "id": "edu-1",
+            "school": "Wyden Educacional",
+            "course": "Análise e Desenvolvimento de Sistemas",
+            "degree": "Tecnólogo",
+            "startYear": "2021",
+            "endYear": "2025",
+            "isCurrent": true,
+            "location": "Remoto"
+          },
+          {
+            "id": "edu-2",
+            "school": "Cepep",
+            "course": "Eletrotécnica",
+            "degree": "Técnico Profissionalizante",
+            "startYear": "2016",
+            "endYear": "2017",
+            "isCurrent": false,
+            "location": "Fortaleza, CE"
+          }
+        ],
+        "experience": [
+          {
+            "id": "exp-1",
+            "company": "TecBan",
+            "role": "Técnico de TI & Redes Sênior",
+            "location": "Ceará, Brasil",
+            "startYear": "2023",
+            "endYear": "Presente",
+            "isCurrent": true,
+            "description": "Atuação direta em suporte de TI de alta complexidade para infraestruturas de autoatendimento bancário. Configuração de roteadores, testes de conectividade e monitoramento remoto de enlaces críticos de comunicação segura."
+          },
+          {
+            "id": "exp-2",
+            "company": "Networks Internet",
+            "role": "Especialista em Redes FTTH & MikroTik",
+            "location": "Ceará, Brasil",
+            "startYear": "2020",
+            "endYear": "2023",
+            "isCurrent": false,
+            "description": "Planejamento e manutenção de redes de fibra óptica FTTH, configuração de roteadores MikroTik, OLTs, switches gerenciáveis e atendimento de chamados N2 e N3 com foco em alta disponibilidade e SLA rigoroso."
+          },
+          {
+            "id": "exp-3",
+            "company": "TIVIT",
+            "role": "Analista de Suporte de Campo",
+            "location": "Fortaleza, CE",
+            "startYear": "2018",
+            "endYear": "2020",
+            "isCurrent": false,
+            "description": "Atendimento a incidentes de hardware e software corporativo, manutenção preventiva de servidores e redes estruturadas de clientes de grande porte nacional."
+          }
+        ],
+        "skills": [
+          {
+            "id": "sk-1",
+            "name": "Redes de Computadores",
+            "level": 5,
+            "category": "Infraestrutura"
+          },
+          {
+            "id": "sk-2",
+            "name": "MikroTik (RouterOS)",
+            "level": 5,
+            "category": "Infraestrutura"
+          },
+          {
+            "id": "sk-3",
+            "name": "Tecnologia FTTH / Fibra Óptica",
+            "level": 5,
+            "category": "Infraestrutura"
+          },
+          {
+            "id": "sk-4",
+            "name": "Python",
+            "level": 4,
+            "category": "Desenvolvimento"
+          },
+          {
+            "id": "sk-5",
+            "name": "Back-End Development",
+            "level": 4,
+            "category": "Desenvolvimento"
+          },
+          {
+            "id": "sk-6",
+            "name": "Automação de Processos",
+            "level": 4,
+            "category": "Desenvolvimento"
+          },
+          {
+            "id": "sk-7",
+            "name": "Inteligência Artificial & Prompts",
+            "level": 4,
+            "category": "Tecnologia Emergente"
+          },
+          {
+            "id": "sk-8",
+            "name": "Garantia da Qualidade (QA)",
+            "level": 3,
+            "category": "Metodologias"
+          },
+          {
+            "id": "sk-9",
+            "name": "Eletrônica & Eletrotécnica",
+            "level": 5,
+            "category": "Hardware"
+          },
+          {
+            "id": "sk-10",
+            "name": "Roteamento e Switches",
+            "level": 4,
+            "category": "Infraestrutura"
+          }
+        ],
+        "certifications": [
+          {
+            "id": "cert-1",
+            "name": "Certificação em Redes MikroTik",
+            "issuer": "MikroTik Training Center"
+          },
+          {
+            "id": "cert-2",
+            "name": "Especialista em Fusão e Medição FTTH",
+            "issuer": "Instituto de Óptica & Telecom"
+          },
+          {
+            "id": "cert-3",
+            "name": "Python para Automação e Análise",
+            "issuer": "Alura / Coursera"
+          },
+          {
+            "id": "cert-4",
+            "name": "Segurança de Redes e Firewalls",
+            "issuer": "Cisco Networking Academy"
+          }
+        ],
+        "achievements": [
+          {
+            "id": "ach-1",
+            "name": "Redução de 35% no tempo de parada de redes através de monitoramento proativo",
+            "issuer": "Networks Internet",
+            "year": "2022"
+          },
+          {
+            "id": "ach-2",
+            "name": "Implementação de scripts em Python para automação de rotinas de backup",
+            "issuer": "TecBan",
+            "year": "2024"
+          },
+          {
+            "id": "ach-3",
+            "name": "Mais de 500 células FTTH ativadas com 100% de conformidade técnica",
+            "issuer": "Telecom Ceará",
+            "year": "2021"
+          }
+        ]
+      },
+      "createdAt": "2026-10-29T12:07:34.237Z",
+      "updatedAt": "2026-10-29T12:07:34.237Z",
+      "atsScore": 96,
+      "lastAtsReport": {
+        "score": 96,
+        "gupyGrade": "A+",
+        "summary": "Currículo estruturado de forma ideal para parsers de inteligência artificial da Gupy e Kenoby.",
+        "strengths": [
+          "Layout linear de coluna única sem quebras de parsing",
+          "Verbos de ação no pretérito com métricas quantitativas",
+          "Palavras-chave técnicas de alta relevância (MikroTik, FTTH, Python, QA)"
+        ],
+        "correctionsApplied": [
+          "Estrutura otimizada para algoritmos semânticos de IA",
+          "Padronização de datas e cargos canônicos"
+        ],
+        "recommendations": [
+          "Mantenha o template Gupy para candidaturas em portais automatizados",
+          "Adicione links do GitHub com projetos práticos de automação"
+        ],
+        "detectedKeywords": [
+          "MikroTik",
+          "FTTH",
+          "Python",
+          "Back-End",
+          "TecBan",
+          "Redes",
+          "SLA"
+        ],
+        "missingCriticalKeywords": [
+          "Docker",
+          "Linux Shell",
+          "CI/CD"
+        ],
+        "readabilityAssessment": "Altamente legível por sistemas automatizados de ATS e recrutadores humanos."
+      }
+    }
+  ]
+}

@@ -1,0 +1,110 @@
+import { ResumeData } from "./types.ts";
+
+export const initialResumeData: ResumeData = {
+  name: "Wilson Sampaio",
+  title: "Especialista em Redes / Desenvolvedor Back-End / FTTH",
+  email: "wilsonluissampaio@gmail.com",
+  phone: "+55 88 99209-9510",
+  location: "Ceará, Brasil",
+  linkedin: "https://www.linkedin.com/in/wilson-sampaio-7a48396b/",
+  instagram: "@devbrasil2022",
+  github: "",
+  website: "",
+  avatarUrl: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=256&h=256",
+  summary: "Profissional sênior e polivalente com sólida atuação em infraestrutura de redes de alta disponibilidade, especialista em tecnologias FTTH e MikroTik. Atualmente cursando Análise e Desenvolvimento de Sistemas com foco em programação Back-End (Python) e inteligência artificial aplicados à automação de processos, análise de dados e garantia de qualidade (QA). Ampla experiência prática em campo e suporte especializado para operadoras de internet e empresas de tecnologia renomadas como TecBan, Networks Internet e TIVIT.",
+  languages: [
+    { id: "lang-1", name: "Português", level: "Nativo" },
+    { id: "lang-2", name: "Inglês", level: "Intermediário" }
+  ],
+  areasOfInterest: [
+    "Back end",
+    "Eletrônica",
+    "Inteligência Artificial",
+    "Networks"
+  ],
+  education: [
+    {
+      id: "edu-1",
+      school: "Wyden Educacional",
+      course: "Análise e Desenvolvimento de Sistemas",
+      degree: "Tecnólogo",
+      startYear: "2021",
+      endYear: "2025",
+      isCurrent: true,
+      location: "Remoto"
+    },
+    {
+      id: "edu-2",
+      school: "Cepep",
+      course: "Eletrotécnica",
+      degree: "Técnico Profissionalizante",
+      startYear: "2016",
+      endYear: "2017",
+      isCurrent: false,
+      location: "Fortaleza, CE"
+    }
+  ],
+  experience: [
+    {
+      id: "exp-1",
+      company: "TecBan",
+      role: "Técnico de TI & Redes Sênior",
+      location: "Ceará, Brasil",
+      startYear: "2023",
+      endYear: "Presente",
+      isCurrent: true,
+      description: "Atuação direta em suporte de TI de alta complexidade para infraestruturas de autoatendimento bancário. Configuração de roteadores, testes de conectividade e monitoramento remoto de enlaces críticos de comunicação segura."
+    },
+    {
+      id: "exp-2",
+      company: "Networks Internet",
+      role: "Especialista em Redes & FTTH",
+      location: "Ceará, Brasil",
+      startYear: "2013",
+      endYear: "2024",
+      isCurrent: false,
+      description: "Liderança de projetos de implantação de redes de fibra óptica (FTTH) ponto a ponto e multiponto. Configuração de roteadores MikroTik (MTCN), roteamento IPV6, servidores OSPF, otimização de enlaces, ativação de clientes corporativos e solução de gargalos de rede."
+    },
+    {
+      id: "exp-3",
+      company: "TIVIT",
+      role: "Analista de Suporte de TI",
+      location: "Fortaleza, CE",
+      startYear: "2018",
+      endYear: "2020",
+      isCurrent: false,
+      description: "Atendimento e suporte técnico de Nível 2 e Nível 3 para grandes clientes corporativos. Configuração de sistemas operacionais, administração de redes de dados locais, monitoramento de servidores na nuvem e implantação de patches de segurança."
+    },
+    {
+      id: "exp-4",
+      company: "Teledata",
+      role: "Técnico em Telecomunicações",
+      location: "Fortaleza, CE",
+      startYear: "2012",
+      endYear: "2013",
+      isCurrent: false,
+      description: "Instalação, calibração e manutenção preventiva de equipamentos eletrônicos de telecomunicações. Diagnósticos de circuitos eletrônicos analógicos e digitais, reparo de placas de circuito e testes de qualidade de sinais RF."
+    }
+  ],
+  skills: [
+    { id: "sk-7", name: "Técnico de TI", level: 5, category: "Hard Skills" },
+    { id: "sk-2", name: "Python", level: 4, category: "Programação" },
+    { id: "sk-1", name: "Microsoft Office", level: 4, category: "Produtividade" },
+    { id: "sk-3", name: "Inteligência Artificial (IA)", level: 3, category: "Novas Tecnologias" },
+    { id: "sk-4", name: "PowerBI", level: 3, category: "Análise de Dados" },
+    { id: "sk-5", name: "AWS (Amazon Web Services)", level: 3, category: "Cloud" },
+    { id: "sk-6", name: "Analista de QA (Testes de Software)", level: 3, category: "Qualidade" }
+  ],
+  certifications: [
+    { id: "cert-1", name: "FTTH Especialista", issuer: "Intelbrás" },
+    { id: "cert-2", name: "Mikrotik MTCN - Specialist", issuer: "CATTV" },
+    { id: "cert-3", name: "Redes, IPV6, Intranet & Roteamento OSPF", issuer: "Nic.br" },
+    { id: "cert-4", name: "Python Básico ao Avançado", issuer: "Udemy" }
+  ],
+  achievements: [
+    { id: "ach-1", name: "Ecossistema de Tecnologia", issuer: "Future Digital Week" },
+    { id: "ach-2", name: "Testes Automáticos de QA", issuer: "Udemy" },
+    { id: "ach-3", name: "Python - Programação Avançada", issuer: "Udemy" },
+    { id: "ach-4", name: "Redes de Alta Disponibilidade", issuer: "Nic.br" }
+  ]
+};
